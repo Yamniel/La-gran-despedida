@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Mi Mejor Amiga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?fm=jpg&q=80&w=3000') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Georgia', cursive;
+            color: #2c3e50;
+            padding: 30px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+        }
+        h1 {
+            font-size: 28px;
+            color: #2980b9;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .hidden {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            font-style: italic;
+        }
+        button {
+            background-color: #3498db;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Para la que fue mi mejor amiga Daniela          ( lo sigue siendo solo quiero dar drama) <br>
+            <small style="font-size:16px;">Una despedida como se lo merece</small>
+        </h1>
+
+        <p>
+            No, no nos peleamos. No hubo drama, ni traición, ni capítulo de novela. Simplemente... dejamos de hablar.  
+            Pero tú sabes, eso no borra lo que compartimos. Hay amistades que no necesitan actualizarse cada semana  
+            para seguir valiendo la pena. Esta es una de esas (espero).
+        </p>
+
+        <div style="text-align:center; margin-top:20px;">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                src="https://soundcloud.com/kurniawan-ardi-kusuma-effendy/128a?in=lahiru-dil/sets/copy-of-see-you-again&si=b1f17c8cd6d8441dadc3dacd058a5439&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+            </iframe>
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="mostrarMensaje()">No presiones aquí, no seas chismosa</button>
+        </div>
+
+        <div id="mensaje" class="hidden">
+            <p>
+                Ey, tranquila, no es un poema llorón. Solo quería dejarte este rincón virtual como recordatorio  
+                de que fuiste (y tal vez sigues siendo) una de las personas más cool que conocí.  
+                Si un día nos volvemos a hablar, bien. Si no... bueno, igual te deseo cosas chulas. Ademas de llenarlos de comentarios que duelen de maldad, ojala no estes pasando un mal momento
+            </p>
+        </div>
+    </div>
+
+    <div style="color: #ecf0f1; font-size: 12px; width: 800px; margin: 0 auto; text-align: center;">
+        De: &nbsp; Yeremi.
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            const mensaje = document.getElementById("mensaje");
+            mensaje.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
